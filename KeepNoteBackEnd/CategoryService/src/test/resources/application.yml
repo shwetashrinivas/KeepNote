@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      username: ankita
+      password: Root@123
+      database: categoryServicedb2
+      port: 27017
+      host: localhost
+server:
+  port: 8088
+  

@@ -1,0 +1,13 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/userDb
+      username: ankitaw
+      password: Root@1234
+      database: userDb
+      port: 27017
+      host: localhost
+server:
+  port: 8088
+  

@@ -1,0 +1,13 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/noteDb
+      username: ankitaw
+      password: Root@1234
+      database: noteDb
+      port: 27017
+      host: localhost
+server:
+  port: 8085
+  

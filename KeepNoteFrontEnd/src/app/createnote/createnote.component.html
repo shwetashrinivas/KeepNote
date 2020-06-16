@@ -1,0 +1,69 @@
+<mat-accordion >
+  <mat-expansion-panel class="note">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Create New Note
+      </mat-panel-title>
+      <!-- <mat-panel-description>
+        Enter Note Details
+      </mat-panel-description> -->
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="Note Title" [(ngModel)]="noteTitle">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Note Content" [(ngModel)]="noteContent">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Note Status" [(ngModel)]="noteStatus">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Note Created By" [(ngModel)]="noteCreatedBy">
+    </mat-form-field>
+    <mat-form-field>
+      <!-- <button type="submit" (click)="onClick()">Category</button> -->
+      <button mat-raised-button [matMenuTriggerFor]="menu1">Category</button>
+<mat-menu #menu1="matMenu" >
+  <button mat-menu1-item (click)="onClick(2)">2</button>
+  <button mat-menu1-item (click)="onClick(3)">3</button>
+  <button mat-menu1-item (click)="onClick(45)">45</button>
+  <button mat-menu1-item (click)="onClick(46)">46</button>
+</mat-menu>
+    </mat-form-field><mat-form-field>
+      
+      <button mat-raised-button [matMenuTriggerFor]="menu">Reminder</button>
+<mat-menu #menu="matMenu" >
+  <button mat-menu-item (click)="onClickReminder(1)">1</button>
+  <button mat-menu-item (click)="onClickReminder(2)">2</button>
+  <button mat-menu-item (click)="onClickReminder(3)">3</button>
+  <button mat-menu-item (click)="onClickReminder(4)">4</button>
+</mat-menu>
+    </mat-form-field>
+
+    <!-- <mat-form-field>
+      
+      <button mat-raised-button [matMenuTriggerFor]="menu">Reminder</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>1</button>
+  <button mat-menu-item>2</button>
+</mat-menu>
+    </mat-form-field><br><br> -->
+    <mat-form-field>
+      <button mat-raised-button class="button" type="submit" (click)="onSubmit()">Create Note</button> 
+    </mat-form-field>
+  </mat-expansion-panel>
+  <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel> -->
+</mat-accordion>

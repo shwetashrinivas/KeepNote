@@ -1,0 +1,84 @@
+
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
+                 >
+                
+                 <mat-accordion >
+                  <mat-expansion-panel class="note">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Create Category
+                      </mat-panel-title>
+                      <!-- <mat-panel-description>
+                        Enter Note Details
+                      </mat-panel-description> -->
+                    </mat-expansion-panel-header>
+                
+                    <mat-form-field>
+                      <input matInput placeholder="Category Id" [(ngModel)]="categoryId">
+                    </mat-form-field>
+                
+                    <mat-form-field>
+                      <input matInput placeholder="Category Name" [(ngModel)]="categoryName">
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Category Description" [(ngModel)]="categoryDescription">
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Category Created By" [(ngModel)]="categoryCreatedBy">
+                    </mat-form-field>
+                    <mat-form-field>
+                      
+                    </mat-form-field><br><br>
+                    <mat-form-field>
+                      <button mat-raised-button class="button" type="submit" (click)="onCreate()">Create Category</button> 
+                    </mat-form-field>
+                  </mat-expansion-panel>
+                  
+                </mat-accordion><br><br>
+                
+                 
+                 <mat-accordion >
+                  <mat-expansion-panel class="note">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Create Reminder
+                      </mat-panel-title>
+                      
+                    </mat-expansion-panel-header>
+                
+                    <mat-form-field>
+                      <input matInput placeholder="Reminder Id" [(ngModel)]="reminderId">
+                    </mat-form-field>
+                
+                    <mat-form-field>
+                      <input matInput placeholder="Reminder Name" [(ngModel)]="reminderName">
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput  placeholder="Reminder Description" [(ngModel)]="reminderDescription">
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Reminder Type" [(ngModel)]="reminderType">
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Reminder Created By" [(ngModel)]="reminderCreatedBy">
+                    </mat-form-field>
+                    <mat-form-field>
+                      
+                    </mat-form-field><br><br>
+                    <mat-form-field>
+                      <button mat-raised-button class="button" value="submit" (click)="onSubmit()">Create Reminder</button> 
+                    </mat-form-field>
+                  </mat-expansion-panel>
+                  
+                </mat-accordion>
+    </mat-sidenav>
+
+    <!-- <mat-sidenav-content >
+     
+     
+    </mat-sidenav-content> -->
+  </mat-sidenav-container>
+
+

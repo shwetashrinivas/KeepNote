@@ -1,0 +1,13 @@
+.note{
+    position:fixed;
+    
+    top: 72px;
+    /* bottom: 0px; */
+    left: 250px;
+    right: 10px;
+  }
+
+  .button{
+      position: unset;
+      left: 85 px;
+  }
